@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix   
+      ./hardware-configuration.nix
     ];
 
   # Bootloader.
@@ -140,6 +140,7 @@
      polkit
      xwayland
      dconf
+     xdg-desktop-portal
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
