@@ -29,6 +29,10 @@
   # Flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # xdgprotal
+  xdg.portal.enable = true;
+  # xdg.portal.extraPortals = [ pkgs.xdg-dekstop-portal-gtk ];
+
   # geodclue2
   services.geoclue2.enable = true;
 
@@ -141,6 +145,11 @@
      xwayland
      dconf
      xdg-desktop-portal
+     waybar
+     dunst
+     libnotify
+     swww
+     hyprlauncher
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
