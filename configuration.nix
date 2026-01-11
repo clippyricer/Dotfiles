@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./hyprland.nix
-      ./hyprpolkit.nix
+
     ];
 
   # Bootloader.
@@ -152,6 +152,12 @@
      libnotify
      swww
      hyprlauncher
+     unzip
+     gptfdisk
+     rsync
+     binwalk
+     e2fsprogs
+     vboot-utils
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
